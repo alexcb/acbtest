@@ -11,6 +11,17 @@ Wraps the `test` command, and outputs the command to stderr if it fails, e.g.
     $ ./acbtest "abc" = "acb"
     test 'abc' '=' 'acb' failed
 
+### `acbdiff`
+
+Wraps the `diff` command, and outputs the command to stderr if it fails, e.g.
+
+    $ ./acbdiff <(echo hello) <(echo Hello)
+    1c1
+    < hello
+    ---
+    > Hello
+    diff '/dev/fd/63' '/dev/fd/62' failed
+
 ### `acbgrep`
 
 Wraps the `grep` command, and outputs the command to stderr if it fails; additionally if reading from a pipe,
