@@ -48,6 +48,12 @@ it will also display the contents of the pipe.
     $ cat some-file | ACBGREP_NO_ECHO=1 ./acbgrep bye
     grep 'bye' failed
 
+### Installation
+
+    wget -O $HOME/bin/acbgrep https://raw.githubusercontent.com/alexcb/acbtest/refs/heads/main/acbgrep && chmod +x $HOME/bin/acbgrep
+    wget -O $HOME/bin/acbtest https://raw.githubusercontent.com/alexcb/acbtest/refs/heads/main/acbtest && chmod +x $HOME/bin/acbtest
+    wget -O $HOME/bin/acbdiff https://raw.githubusercontent.com/alexcb/acbtest/refs/heads/main/acbdiff && chmod +x $HOME/bin/acbdiff
+
 ### License
 
 acbtest (and acbgrep) is free and unencumbered software released into the public domain; see [Unlicense](Unlicense) for details.
